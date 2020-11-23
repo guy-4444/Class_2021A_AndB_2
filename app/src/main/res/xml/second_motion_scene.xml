@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Transition
+        app:constraintSetStart="@layout/activity_panel_start"
+        app:constraintSetEnd="@layout/activity_panel_end"
+        app:duration="1000">
+        <OnSwipe
+            app:touchAnchorId="@+id/recyclerViewStatus"
+            app:touchAnchorSide="top"
+            app:dragDirection="dragUp" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+
+    </ConstraintSet>
+
+
+    <ConstraintSet android:id="@+id/end">
+
+    </ConstraintSet>
+
+
+
+</MotionScene>
